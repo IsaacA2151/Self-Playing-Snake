@@ -1,34 +1,3 @@
-'''class Conditionals:
-
-	def __init__(self, x, y, s, w, sz):
-		# s = snake or any list of already filled points
-		# w = max length of grid / area
-		self.x = x
-		self.y = y
-		self.snake = s
-		self.width = w
-		self.size = sz
-		self.N = True
-		self.E = True
-		self.W = True
-		self.S = True
-
-	def checkEnv(self):
-		limit = self.size
-		#print('O {}'.format(self.o))
-		#print('[X {} Y {}] size {}'.format(self.x,self.y,self.size))
-		#print('N {} E {} S {} W {}'.format([self.x-self.size,self.y],[self.x+self.size,self.y],[self.x,self.y-self.size],[self.x,self.y+self.size]))
-		if self.y == 0 or [self.x,self.y-self.size] in self.snake:
-			self.N = False
-		if self.y == limit or [self.x,self.y+self.size] in self.snake:
-			self.S = False
-		if self.x == 0 or [self.x-self.size,self.y] in self.snake:
-			self.W = False
-		if self.x == limit or [self.x+self.size,self.y] in self.snake:
-			self.E = False
-
-		#print("N {} E {} S {} W {}".format(self.N,self.E,self.S,self.W))'''
-
 class Conditionals:
 
 	def __init__(self, grid, x, y, o=[], s=0):
