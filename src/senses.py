@@ -2,7 +2,7 @@ import conditionals
 
 class Around:
 
-						#width, size
+				#width, size
 	def __init__(self, snake, w, s, direction):
 		self.snake = snake
 		self.y = snake[0][1]
@@ -28,14 +28,8 @@ class Around:
 			self.lx,self.ly = self.x,self.y+self.s
 			self.rx,self.ry = self.x,self.y-self.s
 
-		#print('N {} E {} S {} W {}'.format(con.N,con.E,con.S,con.W))
-
 	def calc(self):
 		self.setUp()
 
 		lSpaces,rSpaces = [],[]
-
-		#while len(lSpaces) == len(rSpaces):
 		lCon = conditionals.Conditionals([],self.lx,self.ly,self.snake,self.w,self.s)
-
-		#print(lCon.N)
