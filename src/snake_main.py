@@ -38,7 +38,7 @@ BLACK = (0,0,0)
 BLUE = (0,255,255)
 FULL_BLUE = (0,0,255)
 RED = (255,0,0)
-GREEN = (0,50,0)    # Colourblind green lol
+GREEN = (0,50,0)  
 
 up,right,down,left = False,False,True,False
 game = True
